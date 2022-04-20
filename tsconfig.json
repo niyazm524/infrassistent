@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "target": "es2019",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "allowJs": true,
+    "lib": [
+      "es2017",
+      "es2019.array",
+      "ES2018.Promise",
+      "dom",
+      "ESNext"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

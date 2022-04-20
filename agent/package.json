@@ -1,0 +1,13 @@
+{
+  "name": "infrassistent-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "PATH=../node_modules/.bin:$PATH ts-node src/main"
+  },
+  "dependencies": {
+    "systeminformation": "^5.11.12"
+  }
+}
