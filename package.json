@@ -6,7 +6,8 @@
   "workspaces": {
     "packages": [
       "agent",
-      "backend"
+      "backend",
+      "client"
     ]
   },
   "devDependencies": {

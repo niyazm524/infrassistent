@@ -8,6 +8,7 @@
     "dev": "PATH=../node_modules/.bin:$PATH ts-node src/main"
   },
   "dependencies": {
+    "socket.io-client": "^4.5.0",
     "systeminformation": "^5.11.12"
   }
 }
