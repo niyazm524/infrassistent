@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "socket.io-client": "^4.5.0",
-    "systeminformation": "^5.11.12"
+    "stat-mode": "^1.0.0",
+    "systeminformation": "niyazm524/systeminformation",
+    "tail-file": "^1.4.15"
   }
 }

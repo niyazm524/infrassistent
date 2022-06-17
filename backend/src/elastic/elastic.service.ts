@@ -7,15 +7,18 @@ export class ElasticService implements OnApplicationBootstrap {
 
   constructor() {
     this.client = new Client({
-      node: 'http://localhost:9200',
+      node: 'http://work-secondary:9200',
       auth: {
         username: 'elastic',
-        password: 'pass4root',
+        password: 'V402GUFiqMpOYQhpBXzl',
       },
     });
   }
 
   async onApplicationBootstrap() {
-    console.log(await this.client.search({ index: 'infrassistent-server' }));
+    // await this.client.indices.create({
+    //   index: 'metrics',
+    //   // settings: { shards: 1, number_of_replicas: 0 },
+    // });
   }
 }

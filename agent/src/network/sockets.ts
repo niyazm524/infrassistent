@@ -1,18 +1,17 @@
 import * as os from 'os';
 import { io } from 'socket.io-client';
-import { uuid } from 'systeminformation';
+import { settings } from '../settings';
 
 export const newSocket = async () => {
-  const sysInfo = await uuid();
-  const socket = io('http://localhost:3004', {
-    auth: { hostname: os.hostname(), id: sysInfo.os || 'undefined' },
+  const socket = io(settings.account.url, {
+    auth: { hostname: os.hostname(), id: settings.account.id || 'undefined' },
   });
   socket.on('connect', () => {
     console.info('Connected to socket');
   });
 
   socket.on('connect_error', (err) => {
-    console.warn(err);
+    console.warn(err.name + ': ' + err.message);
   });
 
   socket.connect();

@@ -578,6 +578,211 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@interactjs/actions@npm:1.10.13, @interactjs/actions@npm:^1.10.2":
+  version: 1.10.13
+  resolution: "@interactjs/actions@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 7b7712b7d8c30012c34db3860110cc322d8b34b23a4be05d8e1233c22af37a9892af3f116c35b96e4e902f8f46b1f8a6c2cac48594169f5c0f346aee0541432d
+  languageName: node
+  linkType: hard
+
+"@interactjs/auto-scroll@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/auto-scroll@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 35bb6d4a23e84bda92d306ea71d560b0c581c7db7a6516951bd468eaac51d66a4b0777957a202c693b2d4299ffbccfa5e48c84fcdbcfca79a1da9293a314a1b3
+  languageName: node
+  linkType: hard
+
+"@interactjs/auto-start@npm:1.10.13, @interactjs/auto-start@npm:^1.10.2":
+  version: 1.10.13
+  resolution: "@interactjs/auto-start@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 5a58b8b1fb967a24c2ffc865deab6376a0ff486a4ddf149237da90c4c04934c876b9dc956fb5fefa1fd30f3019b92401ac06dae65e35ec07ed77e78775ab7569
+  languageName: node
+  linkType: hard
+
+"@interactjs/core@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/core@npm:1.10.13"
+  peerDependencies:
+    "@interactjs/utils": 1.10.13
+  checksum: fb77ba656344eec9691dae7670cf47bc27a15597e6bf771b7fc1a3e44455d0ab596739afab28c690d9d8475aab4568ea22ff4a4dd072eca850e6d49c31aceef7
+  languageName: node
+  linkType: hard
+
+"@interactjs/dev-tools@npm:1.10.13, @interactjs/dev-tools@npm:^1.10.2":
+  version: 1.10.13
+  resolution: "@interactjs/dev-tools@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/modifiers": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 5ab60c6772671a3d7d4c0f4661a60ad3f48c988249cb4dd9175f61c2d435cf7f590d72c27eb36ffea462e44b04ec8d1f33ec369b4a21e95ceebd1e9147f86ace
+  languageName: node
+  linkType: hard
+
+"@interactjs/inertia@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/inertia@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+    "@interactjs/offset": 1.10.13
+  peerDependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/modifiers": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 6cfc9aa6b89f2d61e9b499a5e43fa131d691638968cc595b817af419699dcba9f135354204c3c831b7b52024bbebcb50f9a4b656655992f9b1f3d70526a53142
+  languageName: node
+  linkType: hard
+
+"@interactjs/interact@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/interact@npm:1.10.13"
+  dependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/types": 1.10.13
+    "@interactjs/utils": 1.10.13
+  checksum: 3344fbcfc7e99accf0947dc7b2ca843418917e99103a0f15b61576b886befe0fa1e56a7d5c17ca8ce11969cad4f30c99623ae65fddc5229f23f6547f3a184d83
+  languageName: node
+  linkType: hard
+
+"@interactjs/interactjs@npm:^1.10.2":
+  version: 1.10.13
+  resolution: "@interactjs/interactjs@npm:1.10.13"
+  dependencies:
+    "@interactjs/actions": 1.10.13
+    "@interactjs/auto-scroll": 1.10.13
+    "@interactjs/auto-start": 1.10.13
+    "@interactjs/core": 1.10.13
+    "@interactjs/dev-tools": 1.10.13
+    "@interactjs/inertia": 1.10.13
+    "@interactjs/interact": 1.10.13
+    "@interactjs/modifiers": 1.10.13
+    "@interactjs/offset": 1.10.13
+    "@interactjs/pointer-events": 1.10.13
+    "@interactjs/reflow": 1.10.13
+    "@interactjs/utils": 1.10.13
+  checksum: b227e56357a0759e12ea05f38262e5779b873fbd64a7a8f836fe0025b575fcc65b3845b7b301cc6ecfc835c0e110c37fbf93dd8f98153e88bcf424640459c44f
+  languageName: node
+  linkType: hard
+
+"@interactjs/modifiers@npm:1.10.13, @interactjs/modifiers@npm:^1.10.2":
+  version: 1.10.13
+  resolution: "@interactjs/modifiers@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+    "@interactjs/snappers": 1.10.13
+  peerDependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 777db0edcff6983c8b44ce185d3283f5edfc75daa00522f264086113375228964c897df91b94e8cbcfefacc8880ffcefcd89cabc796cfe9b384b9caa4195ee34
+  languageName: node
+  linkType: hard
+
+"@interactjs/offset@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/offset@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: c6a0a43e68e45fcc569ac0f80cc4ab8e80f151d10704f10e76f894b186d38184c68308d53df5f8698164ae6ba3f21bf963efb66a636069b4e45eb068fa8a5519
+  languageName: node
+  linkType: hard
+
+"@interactjs/pointer-events@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/pointer-events@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: c0af89827b954f627d0378139e07efbfbaa015249de23bcbee47aab5f50e04ed372b171eb50044042b2fc6cd8efdbce6382dd7a7f214dcb783cb0d3c1252a41e
+  languageName: node
+  linkType: hard
+
+"@interactjs/reflow@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/reflow@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/core": 1.10.13
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 304ce0c62b8912a133d45aa6444bb49e010c4c598cf22f88a2bdc7c0b93accb733799d3f360e0615e8583f552a49eab8ebc1546719e3b4f722521cfeb433c069
+  languageName: node
+  linkType: hard
+
+"@interactjs/snappers@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/snappers@npm:1.10.13"
+  dependencies:
+    "@interactjs/interact": 1.10.13
+  peerDependencies:
+    "@interactjs/utils": 1.10.13
+  dependenciesMeta:
+    "@interactjs/interact":
+      optional: true
+  checksum: 673cba653d52f94d715fc3c2c6f44f1e83c71442db06107c6886087723214b63a3c988329171fc4f66065f19a460b747f4fb105d2a02e77cce8991aff91ce5b4
+  languageName: node
+  linkType: hard
+
+"@interactjs/types@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/types@npm:1.10.13"
+  checksum: 980c0106d374c64b82874147a8b8071ea3689335810d826289268a53054cd5456c85a33c35c217247d1ddb99feacaec930bffd1de90c3089ad557ab8e9ae3142
+  languageName: node
+  linkType: hard
+
+"@interactjs/utils@npm:1.10.13":
+  version: 1.10.13
+  resolution: "@interactjs/utils@npm:1.10.13"
+  checksum: 9dd8b8467d6f3b41635980a935beaa1ceb6f19efc0bde0468a87da5e48c35a071d41d822aaee3b491b4ca87ea7e8e2e43be6da076262a1ddd68786ecce699b8a
+  languageName: node
+  linkType: hard
+
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.1.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.1.0"
@@ -2186,6 +2391,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/reactivity@npm:3.2.37":
+  version: 3.2.37
+  resolution: "@vue/reactivity@npm:3.2.37"
+  dependencies:
+    "@vue/shared": 3.2.37
+  checksum: 94e353f8b8a9301cae15c9366f2fec6a163efb7293e9fe5d1da3ed647f1859139b7b321451db56fb5e3141192c0f0755f74ca9c4bcd30ec44372e45def61d69f
+  languageName: node
+  linkType: hard
+
 "@vue/runtime-core@npm:3.2.33":
   version: 3.2.33
   resolution: "@vue/runtime-core@npm:3.2.33"
@@ -2193,6 +2407,16 @@ __metadata:
     "@vue/reactivity": 3.2.33
     "@vue/shared": 3.2.33
   checksum: 8eaba9a5d94461cd8a1adb805a2874f751e08abcc9169ca47a5d4479c20b5cf9c7323adbaa99047e85b6d32240764f4232078c24199a22a2c7044717c12a6984
+  languageName: node
+  linkType: hard
+
+"@vue/runtime-core@npm:3.2.37, @vue/runtime-core@npm:latest":
+  version: 3.2.37
+  resolution: "@vue/runtime-core@npm:3.2.37"
+  dependencies:
+    "@vue/reactivity": 3.2.37
+    "@vue/shared": 3.2.37
+  checksum: 8dbf4e1f973335f5089d6b5965c2756a47589009956f883adb47036315a6d5701ef9d23d52456a6272673bc6f0bcee4f096826b5eae3fec65274e24e9f722a9b
   languageName: node
   linkType: hard
 
@@ -2204,6 +2428,17 @@ __metadata:
     "@vue/shared": 3.2.33
     csstype: ^2.6.8
   checksum: 1fec6328b27c50f8bb73f37324c03c381cad1e48aa134d27539efaa433df57bdcb8f55101972be0f00d093f0310036e569b7211a9ac1c9a75a949141e7112b59
+  languageName: node
+  linkType: hard
+
+"@vue/runtime-dom@npm:latest":
+  version: 3.2.37
+  resolution: "@vue/runtime-dom@npm:3.2.37"
+  dependencies:
+    "@vue/runtime-core": 3.2.37
+    "@vue/shared": 3.2.37
+    csstype: ^2.6.8
+  checksum: 36dddfd56161c94a9a483903a570897e1ee46a95126d54f7948bc184d5d333c9f0c1a9c4cee90ddec63baf4ea2e35be9d0d678108427aba907b0adf0800c75a5
   languageName: node
   linkType: hard
 
@@ -2223,6 +2458,13 @@ __metadata:
   version: 3.2.33
   resolution: "@vue/shared@npm:3.2.33"
   checksum: 0083c9555b44f1c230079fac9270764e51af740f851101ae8972758fe6acf52184f76b4ab0c67a3840096d8f5a0988b99cae3046826b0f15af2431db6127ae48
+  languageName: node
+  linkType: hard
+
+"@vue/shared@npm:3.2.37":
+  version: 3.2.37
+  resolution: "@vue/shared@npm:3.2.37"
+  checksum: 999ab8baeb13de190d07536e7dd0e74ab9354a864d8d903850a2127ae1a2aa2713a9edc0d957620ebf91165d6603d0cd2b0e8ee0db6cbaf8d57a6a0f912af810
   languageName: node
   linkType: hard
 
@@ -3145,6 +3387,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"batch-processor@npm:1.0.0":
+  version: 1.0.0
+  resolution: "batch-processor@npm:1.0.0"
+  checksum: 5519b024f6cd0e95a543bb3edf0ae19e5badae0c32b30b41839b4469bbb1f91e14fc04bff3759cd9c2621aa9e16def48c938783e9027e7ec977fba62d537a468
+  languageName: node
+  linkType: hard
+
 "bcrypt-pbkdf@npm:^1.0.0":
   version: 1.0.2
   resolution: "bcrypt-pbkdf@npm:1.0.2"
@@ -3536,6 +3785,22 @@ __metadata:
   version: 0.7.0
   resolution: "chardet@npm:0.7.0"
   checksum: 6fd5da1f5d18ff5712c1e0aed41da200d7c51c28f11b36ee3c7b483f3696dabc08927fc6b227735eb8f0e1215c9a8abd8154637f3eff8cada5959df7f58b024d
+  languageName: node
+  linkType: hard
+
+"chart.js@npm:^3.8.0":
+  version: 3.8.0
+  resolution: "chart.js@npm:3.8.0"
+  checksum: 0360212bf5d534effc8475a1aa705ba7257a315af368b5e8eecf476f0bd57a6bb80ad740e870d552f2d11e134dd1497ccef02950d7e626c21a400ff00ecf59af
+  languageName: node
+  linkType: hard
+
+"chartjs-adapter-date-fns@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "chartjs-adapter-date-fns@npm:2.0.0"
+  peerDependencies:
+    chart.js: ^3.0.0
+  checksum: 08ee2f99da4a15434e28da733cb0489fe94012ac1a493fbf01d660bcf17df3bb28ce767939c2881b67b3bbefe1a7ffe70dcea4cbd860ab6c2c670d90816e8176
   languageName: node
   linkType: hard
 
@@ -4047,6 +4312,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"csstype@npm:latest":
+  version: 3.1.0
+  resolution: "csstype@npm:3.1.0"
+  checksum: 644e986cefab86525f0b674a06889cfdbb1f117e5b7d1ce0fc55b0423ecc58807a1ea42ecc75c4f18999d14fc42d1d255f84662a45003a52bb5840e977eb2ffd
+  languageName: node
+  linkType: hard
+
 "dashdash@npm:^1.12.0":
   version: 1.14.1
   resolution: "dashdash@npm:1.14.1"
@@ -4075,6 +4347,13 @@ __metadata:
     whatwg-mimetype: ^2.3.0
     whatwg-url: ^8.0.0
   checksum: 97caf828aac25e25e04ba6869db0f99c75e6859bb5b424ada28d3e7841941ebf08ddff3c1b1bb4585986bd507a5d54c2a716853ea6cb98af877400e637393e71
+  languageName: node
+  linkType: hard
+
+"date-fns@npm:^2.28.0":
+  version: 2.28.0
+  resolution: "date-fns@npm:2.28.0"
+  checksum: a0516b2e4f99b8bffc6cc5193349f185f195398385bdcaf07f17c2c4a24473c99d933eb0018be4142a86a6d46cb0b06be6440ad874f15e795acbedd6fd727a1f
   languageName: node
   linkType: hard
 
@@ -4355,6 +4634,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dot-prop@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "dot-prop@npm:7.2.0"
+  dependencies:
+    type-fest: ^2.11.2
+  checksum: 08e4ff14f7305ffb5fda7e4c88f3cdbeb3cd97bd27efa4f47503869a2ee7f96938b4c21b0a2abf9c37d891a1bdb3994a09d219b0dcfd6130da4eaeb44c6f067e
+  languageName: node
+  linkType: hard
+
 "dottie@npm:^2.0.2":
   version: 2.0.2
   resolution: "dottie@npm:2.0.2"
@@ -4397,6 +4685,15 @@ __metadata:
   version: 1.4.114
   resolution: "electron-to-chromium@npm:1.4.114"
   checksum: be44dad2a6433740fdfb14ea95ccd4806b21cb8809e26617108e6796441adc1046b934f193c364250b5956fb0863c2b1805328338e75a3df02a7ea993a47a17d
+  languageName: node
+  linkType: hard
+
+"element-resize-detector@npm:^1.2.1":
+  version: 1.2.4
+  resolution: "element-resize-detector@npm:1.2.4"
+  dependencies:
+    batch-processor: 1.0.0
+  checksum: 81c47b7e229c303889d3a9d78ec3f3232e88a6682f1e2424fb0632d9b4f503b2ca011e6954321060604da07749a5a972b6a175fdf6c6806093a3b80a304cde7b
   languageName: node
   linkType: hard
 
@@ -6773,7 +7070,9 @@ __metadata:
   resolution: "infrassistent-agent@workspace:agent"
   dependencies:
     socket.io-client: ^4.5.0
-    systeminformation: ^5.11.12
+    stat-mode: ^1.0.0
+    systeminformation: niyazm524/systeminformation
+    tail-file: ^1.4.15
   languageName: unknown
   linkType: soft
 
@@ -6833,6 +7132,10 @@ __metadata:
     "@typescript-eslint/parser": ^5.10.0
     autoprefixer: ^10.4.2
     axios: ^0.27.1
+    chart.js: ^3.8.0
+    chartjs-adapter-date-fns: ^2.0.0
+    date-fns: ^2.28.0
+    dot-prop: ^7.2.0
     eslint: ^8.10.0
     eslint-config-prettier: ^8.1.0
     eslint-plugin-vue: ^8.5.0
@@ -6841,7 +7144,9 @@ __metadata:
     socket.io-client: ^4.5.0
     typescript: ^4.5.4
     vue: ^3.0.0
+    vue-chart-3: ^3.1.8
     vue-router: ^4.0.0
+    vue3-grid-layout: ^1.0.0
   languageName: unknown
   linkType: soft
 
@@ -8759,6 +9064,13 @@ __metadata:
   dependencies:
     p-locate: ^4.1.0
   checksum: 83e51725e67517287d73e1ded92b28602e3ae5580b301fe54bfb76c0c723e3f285b19252e375712316774cf52006cb236aed5704692c32db0d5d089b69696e30
+  languageName: node
+  linkType: hard
+
+"lodash-es@npm:latest":
+  version: 4.17.21
+  resolution: "lodash-es@npm:4.17.21"
+  checksum: 05cbffad6e2adbb331a4e16fbd826e7faee403a1a04873b82b42c0f22090f280839f85b95393f487c1303c8a3d2a010048bf06151a6cbe03eee4d388fb0a12d2
   languageName: node
   linkType: hard
 
@@ -11602,6 +11914,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"stat-mode@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "stat-mode@npm:1.0.0"
+  checksum: f9daea2dba41e1dffae5543a8af087ec8b56ff6ae1c729b5373b4f528e214f53260108dab522d2660cca2215dc3e61f164920a82136ad142dab50b3faa6f6090
+  languageName: node
+  linkType: hard
+
 "static-extend@npm:^0.1.1":
   version: 0.1.2
   resolution: "static-extend@npm:0.1.2"
@@ -11891,12 +12210,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"systeminformation@npm:^5.11.12":
-  version: 5.11.12
-  resolution: "systeminformation@npm:5.11.12"
+systeminformation@niyazm524/systeminformation:
+  version: 5.11.16
+  resolution: "systeminformation@https://github.com/niyazm524/systeminformation.git#commit=f2a4e374414b5755d5095ff3b39b0d6f815002e9"
   bin:
     systeminformation: lib/cli.js
-  checksum: 7e88b1350f1d82a3fd905ec5a101753a7cc601d799a35b7a7d5c20c9c28969165995db6a4644c51c3febe19587c1d7a1a454253db4897902b6d35f001b5b2b3c
+  checksum: 7b298fccc968a3a82aa83d15f06513f36757548219b32e57288a332c113e442f86977b25059fe057632c3464629b92d6e5fa34089bb849373ebd917fdd8c2c25
   conditions: (os=darwin | os=linux | os=win32 | os=freebsd | os=openbsd | os=netbsd | os=sunos | os=android)
   languageName: node
   linkType: hard
@@ -11911,6 +12230,15 @@ __metadata:
     string-width: ^4.2.3
     strip-ansi: ^6.0.1
   checksum: 5b07fe462ee03d2e1fac02cbb578efd2e0b55ac07e3d3db2e950aa9570ade5a4a2b8d3c15e9f25c89e4e50b646bc4269934601ee1eef4ca7968ad31960977690
+  languageName: node
+  linkType: hard
+
+"tail-file@npm:^1.4.15":
+  version: 1.4.15
+  resolution: "tail-file@npm:1.4.15"
+  dependencies:
+    debug: ^4.1.1
+  checksum: 32bde6bff49d5da84387321788724628edde4dd210815d5f06e1842a69d868c355f6152613d9934ce2697761de9946bf73db167cb705b1f8dec1ea7fb9bbd4f2
   languageName: node
   linkType: hard
 
@@ -12458,6 +12786,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"type-fest@npm:^2.11.2":
+  version: 2.13.1
+  resolution: "type-fest@npm:2.13.1"
+  checksum: 16f05cfd2b701f923176b2d6c5656d26435e71dc874851c95df9b0a287ce18a31f5b14e487cc325df6286daac02124cb0551d48c2ae7039f8a763aa376f3b479
+  languageName: node
+  linkType: hard
+
 "type-is@npm:^1.6.4, type-is@npm:~1.6.18":
   version: 1.6.18
   resolution: "type-is@npm:1.6.18"
@@ -12782,6 +13117,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vue-chart-3@npm:^3.1.8":
+  version: 3.1.8
+  resolution: "vue-chart-3@npm:3.1.8"
+  dependencies:
+    "@vue/runtime-core": latest
+    "@vue/runtime-dom": latest
+    csstype: latest
+    lodash-es: latest
+  peerDependencies:
+    chart.js: "*"
+    vue: ">= 3"
+  checksum: cb693329aef6c889336bef5df24f3cfa55da7123cf972e3087c9e9aa26f66f35ddf3f063fc8afdf97032ba5a0676e89ce9b8708085bc060fdad74a2681a05544
+  languageName: node
+  linkType: hard
+
 "vue-eslint-parser@npm:^8.0.1":
   version: 8.3.0
   resolution: "vue-eslint-parser@npm:8.3.0"
@@ -12807,6 +13157,21 @@ __metadata:
   peerDependencies:
     vue: ^3.2.0
   checksum: 694f6a85f82c11321ecbbb181db9b1a63fe99f781f33feab56c6ed1924370553b9d4325a9bdc1fbd3bfacb4cea12ef37cee77bc91974c1c6314e07fe8193941b
+  languageName: node
+  linkType: hard
+
+"vue3-grid-layout@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "vue3-grid-layout@npm:1.0.0"
+  dependencies:
+    "@interactjs/actions": ^1.10.2
+    "@interactjs/auto-start": ^1.10.2
+    "@interactjs/dev-tools": ^1.10.2
+    "@interactjs/interactjs": ^1.10.2
+    "@interactjs/modifiers": ^1.10.2
+    element-resize-detector: ^1.2.1
+    lodash: ^4.17.21
+  checksum: efd0b5a4ecb4aed56b331983679e8523ac7727ceda4dc4ca3569ab25e046adcc3bb721709cfe89479483902fd849880def1068f27a2226a04879195b10fd35f8
   languageName: node
   linkType: hard
 

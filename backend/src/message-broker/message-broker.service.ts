@@ -14,19 +14,38 @@ export class MessageBrokerService
   producer: Producer;
   constructor() {
     this.kafka = new Kafka({
-      clientId: 'server',
-      brokers: ['192.168.31.123:29092'],
+      clientId: 'infrassistent-server',
+      brokers: ['work-primary:29092'],
     });
     this.producer = this.kafka.producer({ allowAutoTopicCreation: true });
   }
 
   async sendEvents(topic: string, events: EventMessage[]) {
     await this.producer.send({
-      topic,
+      topic: 'infra_' + topic,
       messages: events.map((event) => ({
         key: event.key,
-        value: JSON.stringify({ data: event.data, when: event.when }),
+        value: JSON.stringify(event.data),
       })),
+    });
+  }
+
+  async sendStringEvent(
+    topic: string,
+    key: string,
+    str: string,
+    headers: { agent: string },
+  ) {
+    await this.producer.send({
+      topic: `infra_${topic}`,
+      messages: [
+        {
+          timestamp: new Date().toISOString(),
+          key,
+          value: str,
+          headers,
+        },
+      ],
     });
   }
 

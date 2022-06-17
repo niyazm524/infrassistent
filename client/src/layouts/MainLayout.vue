@@ -13,6 +13,23 @@
 
         <q-toolbar-title>
           {{ APP_NAME }}
+          <q-icon
+            v-if="!isSockConnected"
+            class="q-ml-lg with-blinking"
+            name="cloud_off"
+            color="red-2"
+            size="lg"
+            ><q-tooltip class="bg-red text-white text-caption"
+              >Соединение разорвано</q-tooltip
+            ></q-icon
+          >
+          <q-icon
+            v-else
+            class="q-ml-lg"
+            name="sensors"
+            color="green-3"
+            size="lg"
+          />
         </q-toolbar-title>
         <q-select
           v-model="refreshInterval"
@@ -50,11 +67,12 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <q-drawer :mini="leftDrawerOpen" show-if-above bordered persistent>
       <q-list>
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
+          :mini="leftDrawerOpen"
           v-bind="link"
         />
       </q-list>
@@ -70,6 +88,7 @@
 import { agentsStore } from 'stores/agents';
 import { computed, defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
+import { sockApi } from 'src/shared/api/sock-api';
 
 const linksList = [
   {
@@ -77,6 +96,10 @@ const linksList = [
     caption: 'Виджеты статуса',
     icon: 'dashboard',
     link: '/',
+    control: {
+      key: 'edit',
+      icon: 'edit',
+    },
   },
   {
     title: 'Management',
@@ -107,6 +130,7 @@ export default defineComponent({
 
   setup() {
     const leftDrawerOpen = ref(false);
+    const { isSockConnected } = sockApi._.useSocketConnectionState();
 
     return {
       essentialLinks: linksList,
@@ -119,14 +143,32 @@ export default defineComponent({
         set: (val) => (agentsStore.currentAgentId = val),
       }),
       agents: computed(() => agentsStore.agents),
-      refreshInterval: computed(() => agentsStore.refreshInterval),
+      refreshInterval: computed({
+        get: () => agentsStore.refreshInterval,
+        set: (val) => (agentsStore.refreshInterval = val),
+      }),
       refreshIntervals: [
         { value: 5000, label: '5 секунд' },
         { value: 10000, label: '10 секунд' },
         { value: 30000, label: 'Пол минуты' },
         { value: 60000, label: '1 минута' },
       ],
+      isSockConnected,
     };
   },
 });
 </script>
+
+<style>
+.with-blinking {
+  animation: fadeinout 0.7s ease-in-out infinite alternate;
+}
+@keyframes fadeinout {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+</style>

@@ -12,7 +12,7 @@
       </q-badge>
     </q-card-section>
     <q-separator />
-    <q-card-section class="q-pt-none">
+    <q-card-section class="q-pt-none overflow-hidden">
       <q-list separator>
         <q-item
           class="q-px-none"
@@ -23,8 +23,14 @@
             <q-icon :name="view.icon" size="18px" />
           </q-item-section>
           <q-item-section>
-            <div>
-              <b>{{ view.name }}</b> {{ view.value }}
+            <div class="flex align-middle justify-start full-width">
+              <b class="flex-shrink">{{ view.name }}</b>
+              <span
+                class="flex-grow overflow-hidden full-width q-pr-md"
+                style="white-space: nowrap"
+                >{{ view.value }}</span
+              >
+              <q-tooltip v-if="view.value">{{ view.value }}</q-tooltip>
             </div>
           </q-item-section>
         </q-item>
@@ -33,26 +39,58 @@
     <q-card-actions>
       <q-btn flat icon="terminal" color="black"></q-btn>
       <q-space />
-      <q-btn flat icon="restart_alt" color="blue"></q-btn>
-      <q-btn flat color="red" icon="stop"></q-btn>
+      <q-btn
+        flat
+        icon="restart_alt"
+        color="blue"
+        :disable="state.actionInProgress != null"
+        :loading="state.actionInProgress === 'restart'"
+        @click="runAction('restart')"
+      ></q-btn>
+      <q-btn
+        v-if="container.state === 'running'"
+        flat
+        color="red"
+        icon="stop"
+        :disable="state.actionInProgress != null"
+        :loading="state.actionInProgress === 'stop'"
+        @click="runAction('stop')"
+      ></q-btn>
+      <q-btn
+        v-if="container.state === 'exited'"
+        flat
+        color="green"
+        icon="play_arrow"
+        :disable="state.actionInProgress != null"
+        :loading="state.actionInProgress === 'start'"
+        @click="runAction('start')"
+      ></q-btn>
     </q-card-actions>
   </q-card>
 </template>
 
 <script lang="ts">
 import { DockerContainerData } from 'components/models';
-import { computed, defineComponent, PropType } from 'vue';
+import { sockApi } from 'src/shared/api/sock-api';
+import { computed, defineComponent, PropType, reactive } from 'vue';
 
 const badgesMap = {
   running: 'green-8',
+  exited: 'grey-7',
 } as const;
+
+type ActionTypes = 'start' | 'stop' | 'restart';
 
 export default defineComponent({
   name: 'DockerContainer',
   props: {
     container: Object as PropType<DockerContainerData>,
   },
+  emits: ['update'],
   setup(props) {
+    const state = reactive({
+      actionInProgress: null as ActionTypes | null,
+    });
     const ports = computed(
       () =>
         props.container?.ports
@@ -80,7 +118,17 @@ export default defineComponent({
           },
         ] as const
     );
-    return { badgesMap, containerView };
+    const runAction = (action: ActionTypes) => {
+      if (!props.container) return;
+      state.actionInProgress = action;
+      sockApi
+        .rpc('control:docker', {
+          container: props.container.id,
+          op: action,
+        })
+        .finally(() => (state.actionInProgress = null));
+    };
+    return { badgesMap, containerView, state, runAction };
   },
 });
 </script>
